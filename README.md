@@ -1,29 +1,28 @@
-# README #
+# php-getting-started
 
-This README would normally document whatever steps are necessary to get your application up and running.
+A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
 
-### What is this repository for? ###
+This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## Deploying
 
-### How do I get set up? ###
+Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+```sh
+$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
+$ cd php-getting-started
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
 
-### Contribution guidelines ###
+or
 
-* Writing tests
-* Code review
-* Other guidelines
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-### Who do I talk to? ###
+## Documentation
 
-* Repo owner or admin
-* Other community or team contact
+For more information about using PHP on Heroku, see these Dev Center articles:
+
+- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
+- [PHP on Heroku](https://devcenter.heroku.com/categories/php)

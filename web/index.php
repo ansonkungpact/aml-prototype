@@ -1,4 +1,4 @@
 <?php 
-wefwefwef
+echo "123";
 include 'index.html';
 ?>

@@ -1,0 +1,655 @@
+body {
+  background: #f2f2f2;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: 'Open Sans', arial;
+}
+a:link, a:visited {
+  color: #0066CC;
+  /*text-decoration: none;*/
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+button:focus, a:focus, .button:focus {
+  outline: 1px solid blue;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+button:hover, .button:hover {
+  text-decoration: underline;
+}
+.button {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #ffd900;
+  border: 1px solid #272F38;
+  font-weight: bold;
+  min-width: 70px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.button a {
+  white-space: nowrap;
+  display: block;
+  /*text-decoration: none;*/
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+h1 {
+  margin: 0;
+}
+
+
+#section-home,
+#home_banner,
+#memPannel #loginPanel,
+#searchPanel,
+#section-select,
+#section-review1,
+#section-review2,
+#section-travellers,
+#section-payment,
+#section-confirm
+{
+  display: none;
+}
+
+
+body.page-home #title-progress-bar,
+body.page-home #memPannel #ProfilePanel,
+body.page-home #shoppingcart-sidebar,
+body.page-select #shoppingcart-sidebar,
+body.page-review1 #shoppingcart-sidebar,
+body.page-home #shoppingcart-icon,
+body.page-select #shoppingcart-icon,
+body.page-review1 #shoppingcart-icon
+{
+  display: none!important;
+}
+
+body.page-home #section-home,
+body.page-home #home_banner,
+body.page-home #memPannel #loginPanel,
+body.page-home #searchPanel,
+body.page-select #section-select,
+body.page-review1 #section-review1,
+body.page-review2 #section-review2,
+body.page-travellers #section-travellers,
+body.page-payment #section-payment,
+body.page-confirm #section-confirm
+{
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #memPannel,
+  body.page-review2 #shoppingcart-sidebar,
+  body.page-travellers #shoppingcart-sidebar,
+  body.page-payment #shoppingcart-sidebar,
+  body.page-confirm #shoppingcart-sidebar
+  {
+    display: block!important;
+    height: auto!important;
+  }
+}
+
+/********************************/
+/********************************/
+/********    general    *********/
+/********************************/
+/********************************/
+
+/*.container{
+  padding: 0;
+}*/
+
+.dropdown-menu {
+  left: -8rem;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 3px 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #373a3c;
+  text-align: inherit;
+  white-space: nowrap;
+  background: 0 0;
+  border: 0;
+}
+
+
+
+
+
+.float-right {
+  float: right;
+  margin-left: 1.667em;
+  margin-right: 8px;
+  color: black;
+}
+.clear-padding-left{
+  padding-left: 0;
+}
+.clear-padding-right{
+  padding-right: 0;
+}
+
+
+
+
+/***********************************************************************************/
+
+
+/********************************/
+/********************************/
+/*********    header    *********/
+/********************************/
+/********************************/
+
+.header-bg {
+  border-bottom: 2px solid #FBD209;
+  background-color: white;
+}
+
+#header{
+  font-size: 0.7rem;
+  width: 100%;
+}
+#header .logo_bar .AM_logo {
+  padding: 0;
+}
+#header .logo_bar .logo_bar_r {
+  margin: 10px 0;
+  text-align: right;
+}
+#header .logo_bar .lang_switch {
+  margin-bottom: 10px;
+}
+#header .logo_bar .menu, #header .logo_bar .user {
+  float: right;
+  margin-right: 15px;
+  margin-top: 30px;
+}
+#header .logo_bar .menu {
+  margin-left: 0;
+}
+#header .logo_bar .menu span, #header .logo_bar .user span {
+  font-size: 1.5em;
+  color: #5d5d5d;
+  cursor: pointer;
+}
+
+
+
+/***********************************************************************************/
+.title-progress-bar-bg {
+  background-color: #616161;
+  margin-bottom: 10px;
+}
+
+#title-progress-bar {
+  width: 100%;
+  float: left;
+}
+#title-progress-bar div {
+  overflow: hidden;
+  display: block;
+  width: 17%;
+  color: #cccccb;
+  background: #616161;
+  /*url(img/progress-sprite.png) no-repeat 0px -44px !important;*/
+  float: left;
+  line-height: 1.8em;
+  font-weight: normal;
+  text-align: center;
+  font-size: 0.8rem;
+  list-style-type: none;
+  border: 1px solid transparent;
+  border-left: 0;
+  border-right: 0;
+}
+#title-progress-bar div:first-child, #title-progress-bar div:last-child{
+  width: 16%;
+}
+#title-progress-bar div.current {
+  color: #000;
+  background: #fdbc15;
+   /*url(img/progress-sprite.png) no-repeat 0px 0px !important;*/
+  border: 1px solid transparent;
+}
+#title-progress-bar div.current + div {
+  background: #5e5e5e;
+   /*url(img/progress-sprite.png) no-repeat 0 -22px !important;*/
+}
+#title-progress-bar div.pass {
+  color: #ffffff;
+  text-decoration: none;
+  background: #000;
+   /*url(img/progress-sprite.png) no-repeat 0px -66px !important;*/
+}
+#title-progress-bar div.pass:first-child{
+  background: #000 !important;
+}
+/***********************************************************************************/
+
+
+#memPannel, #searchPanel, #shoppingcart-sidebar {
+  box-shadow: none;
+}
+
+/********************************/
+/********************************/
+/****    profile / login    *****/
+/********************************/
+/********************************/
+.myProfileLink{
+  margin-top: 4px;
+}
+.myProfileLink a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+
+#memPannel{
+  background-color: #FBD209;
+  color: #000;
+  font-weight: 100;
+  line-height: 1.8em;
+  font-size: 0.8rem;
+  color: #666666;
+}
+#memPannel #loginPanel {
+  padding: 10px;
+}
+#memPannel #loginPanel input{
+  font-size: 1em;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 4px;
+}
+#memPannel #loginPanel input#rememberMe {
+  float: left;
+  margin-right: 4px;
+  height: 16px;
+}
+
+#memPannel #loginPanel #rememberme_tips_href {
+  color: inherit;
+}
+#memPannel #loginPanel #rememberme_tips span {
+  cursor: pointer;
+}
+#memPannel #loginPanel #rememberMe_text {
+  margin-left: 16px;
+}
+#memPannel #loginPanel .loginSubmitButton{
+  margin-top: 4px;
+}
+#memPannel #loginPanel .join_button {
+  line-height: 1rem;
+  font-size: 0.7rem;
+  color: #666666;
+  margin-top: 10px;
+}
+#memPannel #loginPanel .join_button a{
+  font-size: 0.7rem;
+}
+
+
+#memPannel #ProfilePanel #profile-welcome {
+  font-weight: bold;
+  line-height: 1rem;
+}
+#memPannel #ProfilePanel h2 {
+  padding: 8px 14px;
+  background-color: #FBBD19;
+  color: #000;
+  background: #fdbe0f;
+  background: -moz-linear-gradient(top, #FBBD19 0%, #FBBD19 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBBD19), color-stop(100%,#FBBD19));
+  background: -webkit-linear-gradient(top, #FBBD19 0%,#FBBD19 100%);
+  background: -o-linear-gradient(top, #FBBD19 0%,#FBBD19 100%);
+  background: -ms-linear-gradient(top, #FBBD19 0%,#FBBD19 100%);
+  background: linear-gradient(to bottom, #FBBD19 0%,#FBBD19 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBBD19', endColorstr='#FBBD19',GradientType=0 );
+}
+#memPannel #ProfilePanel .profile-welcome-title {
+  padding-left: 10px;
+}
+#memPannel #ProfilePanel .profile-welcome-content {
+  padding-left: 10px;
+  font-size: 0.82rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/********************************/
+/********************************/
+/*********    search    *********/
+/********************************/
+/********************************/
+#searchPanel h2, #shoppingcart-sidebar h2 {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #5a5754;
+  background: linear-gradient(to bottom, #5a5754 0%,#333333 100%);
+  background: -webkit-linear-gradient(top, #5a5754 0%,#333333 100%);
+  color: #FFFFFF;
+}
+#searchPanel input[type="text"], #searchPanel input[type="date"] {
+  width: 170px;
+  margin-bottom: 4px;
+}
+#searchPanel .searchPanel-feilds{
+  padding: 8px;
+  border-top: 1px solid #FACF00;
+}
+#searchPanel .searchPanel-feilds:first-child {
+  padding-top: 0;
+  border: 0;
+}
+#searchPanel .searchPanel-feilds .radio{
+  float: left;
+  width: 100%;
+}
+#searchPanel .searchPanel-feilds .room div div,
+#searchPanel .searchPanel-feilds .room div select {
+  float: left;
+  margin-top: 4px;
+}
+#searchPanel .searchPanel-feilds .room div div {
+  min-width: 130px;
+  word-wrap: break-word;
+}
+
+
+#searchPanel .searchPanel-feilds .more_search_option {
+  padding-right: 4px;
+}
+#searchPanel .search_btn {
+  margin-top: 4px;
+}
+
+
+
+
+
+
+/********************************/
+/********************************/
+/**    shoppingcart-sidebar    **/
+/********************************/
+/********************************/
+#shoppingcart-sidebar .summary-sidebar {
+  font-size: 1em;
+  font-weight: bold;
+  color: #666;
+  padding: 0.70em;
+}
+#shoppingcart-sidebar .shoppingcart-sidebar-feilds{
+  padding: 8px;
+  border-top: 1px solid #aaa;
+}
+#shoppingcart-sidebar .shoppingcart-sidebar-feilds:first-child {
+  padding-top: 0;
+  border: 0;
+}
+#shoppingcart-sidebar .shoppingcart-sidebar-feilds .glyphicon {
+  vertical-align: middle;
+  padding-right: 6px;
+}
+.cartsubtotal-sidebar, .total-sidebar {
+  color: #666;
+  font-size: 1.4em;
+  padding: 10px;
+}
+.cartsubtotal-sidebar{
+  border-bottom: 2px solid #aaa;
+}
+.cartsubtotal-sidebar{
+  border-top: 1px solid #aaa;
+}
+.leftcell-cartsubtotal-sidebar {
+  width: 110px;
+  float: left;
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 30px;
+  clear: both;
+  font-weight: bold;
+  height: 16px;
+  vertical-align: middle;
+}
+.rightcell-cartsubtotal-sidebar {
+  width: 130px;
+  float: right;
+  font-weight: bold;
+  text-align: right;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-right: 5px;
+  height: 16px;
+  vertical-align: middle;
+}
+.MilesSymbol {
+  float: left;
+  width: 20px;
+  height: 22px;
+  background-image: url(img/bkg_points.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.MilesValueLarge {
+    min-width: 120px;
+    height: 22px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+
+
+/********************************/
+/********************************/
+/*********    home_adv **********/
+/********************************/
+/********************************/
+.home_adv img, .home_adv a {
+  width: 100%;
+}
+.home_adv img {
+  margin-top: 10px;
+}
+.home_adv img:first-child {
+  border: 1px solid #eee;
+}
+
+.home_adv.visible-xs img, .home_adv.visible-xs a {
+  width: 50%;
+  float: left;
+}
+.home_adv.visible-xs img:first-child {
+  width: 100%;
+}
+
+
+/***********************************************************************************/
+
+
+
+.page-item { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 5px 5px 5px #ddd; margin-bottom: 16px; outline: 1px solid transparent;}
+.item-container {padding: 15px;}
+.item-container p{padding-top: 10px;}
+.item-container p:first-child{padding-top: 0;}
+/********************************/
+/********************************/
+/********    highlight  *********/
+/********************************/
+/********************************/
+.highlight:hover .location_large_title,
+.highlight:hover .location_small_title {
+  text-decoration: underline;
+}
+.highlight-left, .highlight-right {
+  float: left;
+  position: relative;
+}
+.highlight-left {
+    width: 100%;
+    height: 240px;
+}
+.highlight-left img{
+  height: 100%;
+}
+.highlight-left .highlight_tag{
+  position: absolute;
+  background: #272F38;
+  opacity: 0.8;
+  width: 100%;
+  bottom: 0;
+  padding: 4px;
+  min-width: 6rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.75rem;
+  border-bottom: 4px solid #FACF00;
+}
+.highlight-right {
+  width: 100%;
+}
+
+@media screen and (min-width: 991px) {
+  .highlight-left {
+    width: 66%;
+    height: 240px;
+  }
+  .highlight-right {
+    width: 34%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .highlight_even a .highlight-left, .highlight_even a .highlight-right {
+    float: right;
+  }
+  .home_right{
+    padding-left: 0;
+  }
+}
+#home_banner {
+  margin: 16px 0;
+}
+#home_banner img, .highlight .highlight_img {
+  width: 100%;
+}
+.highlight .location_large_title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000000;
+}
+.highlight .location_small_title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #666666;
+}
+.highlight .location_des_content {
+  font-size: 0.75rem;
+  color: #666666;
+  float: left;
+  margin: 8px 0;
+  clear: both;
+}
+.highlight .location_costPerNight {
+  float: right;
+  font-size: 0.75rem;
+  color: #666666;
+}
+
+
+@media screen and (min-width: 991px) {
+  .highlight .location_costPerNight, .highlight.highlight_even .location_costPerNight {
+    right: -172px;
+    bottom: 8px;
+  }
+  .highlight.highlight_even .location_costPerNight {
+    left: -172px;
+  }
+}
+
+
+.price_text {
+  font-size: 0.62rem;
+  padding: 10px 0;
+}
+
+
+
+
+
+/***********************************************************************************/
+
+
+
+
+
+/********************************/
+/********************************/
+/**********    footer    ********/
+/********************************/
+/********************************/
+#footer {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+#footer .links {
+  background: #000;
+  color: #fff;
+  padding: 11px 0px;
+}
+#footer .links a {
+  color: #fff;
+}
+#footer .copyright {
+  background: rgb(255, 211, 0);
+  padding: 5px 0px;
+}
+#footer .copyright a {
+  color: rgb(0, 102, 204);
+}

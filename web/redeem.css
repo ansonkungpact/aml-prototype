@@ -211,6 +211,16 @@ a.ui-button:active,
 #section-confirm .description_tbl_row .payment_right .payment_total_left{margin-right: 30px;}
 
 #section-confirm .payment_detail .small_text {font-size: 0.5rem; line-height: 1rem;}
+#section-confirm .download_print_att .item-container div{line-height: 1.2rem;}
+#section-confirm .download_print_att .item-container .reminder{margin-top: 4px;}
+#section-confirm .booking_contact_details div div{min-width: 120px; float: left;}
+#section-confirm .make_other_reservation .button{margin-top: 0;}
+#section-confirm .add_extras {line-height: 1rem;}
+#section-confirm .add_extras .extra_img{width: 100%;}
+#section-confirm .add_extras .extra_name {font-weight: bold;}
+#section-confirm .add_extras .extra_place {margin: 10px 0; font-weight: bold;}
+#section-confirm .add_extras .extra_miles {text-align: right;}
+#section-confirm .see_more .button{min-width: 120px;}
 
 
 
@@ -228,8 +238,9 @@ a.ui-button:active,
   .box-room .info .cost { margin: 0; }
   .box-room .info .remarks { text-align: right; }
   .box-room .info .choice { position: relative; transform: none; text-align: right; }
-  #section-review1 .btn-next,
-  .box-hotel .info .gallery { height: 390px; }
+  #section-review1 .btn-next, .box-hotel .info .gallery { height: 390px; }
+
+  #section-confirm .add_extras .extra_img {height: 210px;}
 }
 
 @media screen and (min-width: 992px) {
@@ -237,4 +248,7 @@ a.ui-button:active,
   .box-room .info { min-height: 200px; margin-left: 1%; width: 65%; }
   .box-room .info .remarks { margin-top: 60px; }
   .box-hotel .info .gallery { height: 520px; }
+
+  #section-confirm .booking_contact_details {min-height: 129px;}
+  #section-confirm .add_extras .extra_img {height: 165px;}
 }

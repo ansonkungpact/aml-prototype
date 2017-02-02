@@ -68,11 +68,11 @@ h1 {
 }
 
 
-body.page-home #title-progress-bar,
+body.page-home .title-progress-bar-bg,
 body.page-home #memPannel #ProfilePanel,
 body.page-home #shoppingcart-sidebar,
 body.page-select #shoppingcart-sidebar,
-body.page-review1 #shoppingcart-sidebar,,
+body.page-review1 #shoppingcart-sidebar,
 body.page-confirm #shoppingcart-sidebar
 body.page-home #shoppingcart-icon,
 body.page-select #shoppingcart-icon,

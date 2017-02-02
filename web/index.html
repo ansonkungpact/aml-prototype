@@ -694,7 +694,7 @@
         </ul>
       </div>
 
-      <!------------------ review1 section ------------------>
+      <!---------------------------------- review1 section ---------------------------------->
       <div id="section-review1">
         <div class="page-item box-hotel">
           <div class="grey-box-header header">
@@ -1021,7 +1021,7 @@
         <div>This is review2</div>
       </div>
 
-      <!------------------ travellers section ------------------>
+      <!---------------------------------- travellers section ---------------------------------->
       <div id="section-travellers">
         <form action="">
           <div class="page-item guest-info">
@@ -1090,7 +1090,7 @@
         </form>
       </div>
 
-      <!------------------ payment section ------------------>
+      <!---------------------------------- payment section ---------------------------------->
       <div id="section-payment">
         <div class="page-item">
           <div class="grey-box-header header">
@@ -1143,7 +1143,8 @@
         <div class="button float-right" onclick="gotoPage('confirm')">Book</div>
       </div>
 
-      <!------------------ confirm section ------------------>
+
+      <!---------------------------------- confirm section ---------------------------------->
       <div id="section-confirm">
         <div class="page-item">
           <div class="grey-box-header header">
@@ -1303,31 +1304,98 @@
           </div>
         </div>
 
+
         <div class="row">
-          <div class="col-sm-6">
-            <div class="page-item">
+          <div class="col-sm-12 col-md-6">
+            <div class="page-item download_print_att">
               <div class="grey-box-header header">
                 <h4>Download and Print Attachments</h4>
               </div>
               <div class="item-container">
-                <a href="#" target="_blank">Travel Itinerary Details</a><br>
-                <a href="#" target="_blank">Hotel Vocher</a><br>
-                <a href="#" target="_blank">Terms and Conditions</a>
-                <div>*Be sure to print and present vouchers at check-in/pick-up as proof of payment.</div>
+                <div><a href="#" target="_blank">Travel Itinerary Details</a></div>
+                <div><a href="#" target="_blank">Hotel Vocher</a></div>
+                <div><a href="#" target="_blank">Terms and Conditions</a></div>
+                <div class="reminder">*Be sure to print and present vouchers at check-in/pick-up as proof of payment.</div>
               </div>
             </div>
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <div class="page-item">
               <div class="grey-box-header header">
                 <h4>Booking Contact Details</h4>
+              </div>
+              <div class="item-container booking_contact_details">
+                <div class="clearfix">
+                  <div class="bold">Name</div>
+                  <div>Mr Billy Chan</div>
+                </div>
+                <div class="clearfix">
+                  <div class="bold">Home Telephone</div>
+                  <div>852 1234 1234</div>
+                </div>
+                <div class="clearfix">
+                  <div class="bold">Email address</div>
+                  <div>billychan@gmail.com</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="button float-right" onclick="gotoPage('')">Make other reservation</div>
+
+        <div class="clearfix make_other_reservation">
+          <div class="button float-right" onclick="gotoPage('')">Make other reservation</div>
+        </div>
+
+
+
+        <div class="page-item">
+          <div class="grey-box-header header">
+            <h4>Add Extras To Your Trip</h4>
+          </div>
+          <div class="item-container add_extras">
+            <div>Experience</div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <img class="extra_img" src="img/add_extras/experience1.jpg" alt="">
+                <div class="extra_des">
+                  <div class="extra_name">Tokyo Doll Evening Cabaret Show in Roppongi</div>
+                  <div class="extra_place">Tokyo</div>
+                  <div class="extra_cat">Shows, Concerts & Sports</div>
+                  <div class="extra_miles">From <img alt="" src="https://cdn-travel.asiamiles.com/ibe/theme/legacy/images/common/bkg_points.png"> 13,650 per person</div>
+                  <div class="button" onclick="gotoPage('review')">Select</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <img class="extra_img" src="img/add_extras/experience2.jpg" alt="">
+                <div class="extra_des">
+                  <div class="extra_name">Evening Photo Walking Tour in Kabuji-cho</div>
+                  <div class="extra_place">Tokyo</div>
+                  <div class="extra_cat">Sightseeing Tours</div>
+                  <div class="extra_miles">From <img alt="" src="https://cdn-travel.asiamiles.com/ibe/theme/legacy/images/common/bkg_points.png"> 15,080 per person</div>
+                  <div class="button" onclick="gotoPage('review')">Select</div>
+              </div>
+            </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <img class="extra_img" src="img/add_extras/experience3.jpg" alt="">
+                <div class="extra_des">
+                  <div class="extra_name">Private Arrival Transfer: Tokyo Narita Airport to H..</div>
+                  <div class="extra_place">Tokyo</div>
+                  <div class="extra_cat">Transfers & Ground Transport</div>
+                  <div class="extra_miles">From <img alt="" src="https://cdn-travel.asiamiles.com/ibe/theme/legacy/images/common/bkg_points.png"> 20,800 per person</div>
+                  <div class="button" onclick="gotoPage('review')">Select</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="clearfix see_more">
+          <div class="button float-right" onclick="gotoPage('select')">See more</div>
+        </div>
+
       </div>
 
     </div>

@@ -45,7 +45,7 @@ a.ui-button:active,
 .box-hotel .header h4 a { color: #ffffff; font-size: 1em; font-weight: bold; }
 .box-hotel .header .rating { display: inline-block; }
 .box-hotel .header .rating span {  }
-.box-hotel .content { border-bottom: 1px solid #eeeded; background-color: #f8f9f9;}
+/*.box-hotel .content { border-bottom: 1px solid #eeeded; background-color: #f8f9f9;}*/
 /*.box-hotel .content + .content { margin-bottom: 10px; }*/
 /*.box-hotel .picture { height: 200px; background-size: cover; background-position: center; }*/
 .box-hotel .picture { padding-left: 0; padding-right: 0; overflow: hidden; }
@@ -188,6 +188,33 @@ a.ui-button:active,
 #section-payment .dob_input {margin-top: 4px; float: left;}
 #section-payment .dob_input input {width: 30px; height: 25px;}
 #section-payment .dob_input input:last-child {width: 40px;}
+
+
+
+
+/****************************  confirm  ****************************/
+#section-confirm {font-size: 0.75rem; line-height: 1.8rem;}
+#section-confirm .ref_num{font-size: 1rem; font-weight: bold;}
+#section-confirm .picture { padding-left: 0; padding-right: 0; overflow: hidden; }
+#section-confirm .picture img { width: 100%; }
+#section-confirm .facilities ul {list-style: none;}
+#section-confirm .facilities ul li {display: inline;}
+#section-confirm .room_info div div{min-width: 120px; float: left;}
+#section-confirm .note{line-height: 1rem; margin: 16px 0;}
+#section-confirm .description_tbl_row {font-size: 0.8rem; border-top: 1px solid #aaa;}
+#section-confirm .description_tbl_row div{float: left;}
+#section-confirm .payment_total_left {max-width: 250px;}
+#section-confirm .payment_total_left div{float: right;}
+#section-confirm .description_tbl_head{font-size: 0.9rem; font-weight: bold; border-top:0;}
+#section-confirm .description_tbl_total{font-size: 0.9rem; font-weight: bold; border-top: 2px solid #aaa;}
+#section-confirm .description_tbl_row .payment_right{float: right; text-align:right;}
+#section-confirm .description_tbl_row .payment_right .payment_total_left{margin-right: 30px;}
+
+#section-confirm .payment_detail .small_text {font-size: 0.5rem; line-height: 1rem;}
+
+
+
+
 
 @media screen and (min-width: 375px) {
   .box-room .info .col-cost { width: 66.66666667%; }

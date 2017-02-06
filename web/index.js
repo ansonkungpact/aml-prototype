@@ -1,8 +1,7 @@
 function gotoPage(page) {
   $('body').removeClass(function () {
     return $(this).attr('class');
-  })
-  .addClass('page-' + page);
+  });
 
   current_page = page;
 
@@ -51,6 +50,8 @@ function gotoPage(page) {
       current_page = "home";
       break;
   }
+
+  $('body').addClass('page-' + current_page);
 
   // update progress bar
   for(i=0; i<progress_index; i++){

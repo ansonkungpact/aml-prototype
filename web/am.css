@@ -50,6 +50,10 @@ button:hover, .button:hover {
 h1 {
   margin: 0;
 }
+input, select {
+  border-width: 1px;
+  border-color: #555;
+}
 .bold{font-weight: bold;}
 
 
@@ -212,7 +216,7 @@ body.page-confirm #section-confirm
   overflow: hidden;
   display: block;
   width: 17%;
-  color: #cccccb;
+  color: #ddd;
   background: #616161;
   /*url(img/progress-sprite.png) no-repeat 0px -44px !important;*/
   float: left;
